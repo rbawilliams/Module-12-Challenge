@@ -1,31 +1,53 @@
-# Module 12 Report Template
 
-## Overview of the Analysis
+# CREDIT RISK ANALYSIS
 
-In this section, describe the analysis you completed for the machine learning models used in this Challenge. This might include:
+![Alt text](creditriskanalysis.jfif)
 
-* Explain the purpose of the analysis.
-* Explain what financial information the data was on, and what you needed to predict.
-* Provide basic information about the variables you were trying to predict (e.g., `value_counts`).
-* Describe the stages of the machine learning process you went through as part of this analysis.
-* Briefly touch on any methods you used (e.g., `LogisticRegression`, or any resampling method).
+## Table of Contents:
 
-## Results
+- Introduction
 
-Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
+- Loan Data Description
 
-* Machine Learning Model 1:
-  * Description of Model 1 Accuracy, Precision, and Recall scores.
+- Machine Learning Process
+    a. Splitting the Data into Training and Testing Datasets
+    b. Training Different Machine Learning Models
+    c. Model Evaluation
 
+- Results and Recommendations
 
 
-* Machine Learning Model 2:
-  * Description of Model 2 Accuracy, Precision, and Recall scores.
 
-## Summary
+## Introduction
 
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
-* Which one seems to perform best? How do you know it performs best?
-* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
+In this analysis, my goal was to build machine learning models that can predict loan risk based on given financial data. To achieve this goal, I used a loan dataset that includes information on the loan status, annual income, debt-to-income ratio, and others. The task was to predict the loan status, which is binary, either healthy loan or high-risk loan.
 
-If you do not recommend any of the models, please justify your reasoning.
+## Loan Data Description
+The loan status column has two values: 0, which indicates a healthy loan, and 1, which indicates a high-risk loan. The value counts of the loan status column show that 75036 loans are healthy, while 2500 loans are high-risk.
+
+## Machine Learning Process
+**Splitting the Data into Training and Testing Datasets
+
+ I split the data into training and testing datasets to train the models and evaluate their performance.
+
+**Training Different Machine Learning Models
+
+I trained two different machine learning models, logistic regression and random forest, to predict loan risk.
+
+**Model Evaluation
+
+To evaluate the performance of the models, I calculated the balanced accuracy, precision, and recall scores, generated a confusion matrix, and printed a classification report for each model. The results of the evaluation are summarized as follows:
+
+## Logistic Regression:
+- Balanced accuracy score: 95.2%
+- Precision score: 100% for healthy loans (class 0) and 85% for high-risk loans (class 1)
+- Recall score: 91% for high-risk loans (class 1)
+## Random Forest:
+- Balanced accuracy score: 92.2%
+- Precision score: 99% for healthy loans (class 0) and 80% for high-risk loans (class 1)
+- Recall score: 87% for high-risk loans (class 1)
+
+## Results and Recommendations
+Based on the evaluation, the logistic regression model performs better in terms of balanced accuracy and precision scores. It achieved a higher balanced accuracy score and higher precision score for high-risk loans, which is important since the goal is to accurately predict high-risk loans. The performance of the models depends on the problem we are trying to solve. In this case, it is more important to predict high-risk loans accurately, and the logistic regression model seems to perform better in this regard.
+
+Therefore, I **recommend** using the **logistic regression model** to predict loan risk.
