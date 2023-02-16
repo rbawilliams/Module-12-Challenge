@@ -1,5 +1,5 @@
 
-# Credit Risk Analysis with Logistic Regression and Resampling
+# Title: Credit Risk Analysis with Logistic Regression and Resampling
 
 ![Alt text](Images/12-5-challenge-image.png)
 
