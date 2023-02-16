@@ -1,7 +1,7 @@
 
 # CREDIT RISK ANALYSIS
 
-![Alt text](creditriskanalysis.png)
+![Alt text](12-5-challenge-image.png)
 
 ## Table of Contents:
 
