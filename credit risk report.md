@@ -1,5 +1,5 @@
 
-# REPORT CREDIT RISK ANALYSIS
+# REPORT: CREDIT RISK ANALYSIS
 
 ![Alt text](Images/creditriskanalysis.png)
 
