@@ -1,7 +1,7 @@
 
 # CREDIT RISK ANALYSIS
 
-![Alt text](creditriskanalysis.jpeg)
+![Alt text](creditriskanalysis.png)
 
 ## Table of Contents:
 
